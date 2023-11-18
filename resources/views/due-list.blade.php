@@ -31,7 +31,7 @@
                     <tbody>
                         @foreach ($dues as $due)
                             <tr onclick="window.location='/due/{{ $due['id'] }}';" style="cursor: pointer;">
-                                <td>{{ $due['declarante_cpf_cnpj'] }}</td>
+                                <td>{{ $due['declarante_cpf_cnpj'] . ' - ' . $due['declarante_razao_social'] }}</td>
                                 <td>{{ $due['identificacao'] }}</td>
                                 <td>{{ $due['numero'] }}</td>
                                 <td>{{ $due['moeda'] }}</td>
